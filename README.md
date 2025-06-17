@@ -31,7 +31,7 @@ A sleek and responsive **Weather App** built using **Bootstrap** and a **Weather
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/Victrf/weather-app.git
 cd weather-app
 
 
