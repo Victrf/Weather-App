@@ -38,9 +38,7 @@ Open index.html in your browser to run it locally.
 
 🔐 Make sure to insert your API key in the designated place in the JS file:
 
-javascript
-Copy
-Edit
+
 const apiKey = "YOUR_API_KEY_HERE";
 ✨ Possible Improvements
 Want to enhance the app? Here are some ideas:
