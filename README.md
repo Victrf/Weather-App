@@ -34,13 +34,6 @@ A sleek and responsive **Weather App** built using **Bootstrap** and a **Weather
 git clone https://github.com/Victrf/weather-app.git
 cd weather-app
 
-
-
-
-
-
-
-
 Open index.html in your browser to run it locally.
 
 🔐 Make sure to insert your API key in the designated place in the JS file:
