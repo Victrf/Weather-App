@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('noaa-0ETSZYPjvDo-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.weather-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    max-width: 400px;
+    margin: 100px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.input-group input {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-group button {
+    padding: 10px;
+    border: none;
+    background: #00bcd4;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+
+
+#geo-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#weather-summary {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.spinner {
+    border: 6px solid #ccc;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+#trend-section {
+    margin-top: 20px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.trend-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.trend-cards .card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100px;
+    backdrop-filter: blur(6px);
+    transition: transform 0.2s ease;
+}
+
+.trend-cards .card:hover {
+    transform: scale(1.05);
+}

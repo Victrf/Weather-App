@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌤️ Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="weather-container">
+        <h1>🌤️ Weather Checker</h1>
+    
+        <div class="input-group">
+            <input type="text" id="city-input" placeholder="Enter city name..." />
+            <button id="get-weather">Get Weather</button>
+        </div>
+    
+        <!-- 🌐 Toggle between Celsius and Fahrenheit -->
+        <button id="toggle-unit">Switch to °F</button>
+    
+        <!-- 🔄 Loading indicator -->
+        <div id="loader" class="hidden">
+            <div class="spinner"></div>
+            <p>Fetching weather...</p>
+        </div>
+    
+        <!-- 🌍 Weather result display -->
+        <div id="weather-result" class="hidden">
+            <h2 id="city-name"></h2>
+            <img id="weather-icon" src="" alt="Weather Icon" />
+            <p id="local-time"></p>
+            <p id="temp"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+        </div>
+    
+        <!-- ⚠️ Error message display -->
+        <p id="error-message" class="error hidden"></p>
+
+        <!-- 📍 Use Location -->
+        <button id="geo-btn">📍 Use My Location</button>
+        
+        <!-- 🧠 AI Weather Summary -->
+        <p id="weather-summary" class="ai-summary"></p>
+        
+        <!-- 📊 Weather Trend Placeholder -->
+        <div id="weather-trend" class="trend hidden">
+            <h3>📊 Weather Trends (Coming Soon)</h3>
+            <p>Trends will be available with One Call API</p>
+            <canvas id="trend-chart" class="trend hidden" width="300" height="150"></canvas>
+
+            <div id="trend-section" class="hidden">
+                <h3>📈 7-Day Weather Trend</h3>
+                <div id="trend-cards" class="trend-cards"></div>
+            </div>
+            
+        </div>
+
+        
+    </div>
+    
+
+    
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
